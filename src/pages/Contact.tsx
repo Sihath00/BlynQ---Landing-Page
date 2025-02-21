@@ -132,7 +132,7 @@ export const Contact = () => {
               <h3 className="text-3xl font-extrabold mb-6 text-blue-900">Contact Info</h3>
               <div className="grid gap-6">
                 {[
-                  { icon: Mail, label: "Email", info: "info.blynq@gmailcom" },
+                  { icon: Mail, label: "Email", info: "info.blynq@gmail.com" },
                   { icon: Phone, label: "Phone", info: "+94 718959193" },
                   { icon: MapPin, label: "Address", info: "123 Main Street, Colombo 03, Sri Lanka" },
                   { icon: Clock, label: "Business Hours", info: "Mon - Fri: 9:00 AM - 6:00 PM" },
