@@ -41,6 +41,7 @@ html {
 .gradient-text {
   background: linear-gradient(135deg, #3B82F6, #2563EB);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -71,10 +72,10 @@ html {
 /* Responsive Container Padding */
 .container {
   padding: 1rem;
-  @screen md {
+  @media (min-width: 768px) {
     padding: 2rem;
   }
-  @screen lg {
+  @media (min-width: 1024px) {
     padding: 3rem;
   }
 }
@@ -82,10 +83,10 @@ html {
 /* Section Spacing */
 .section {
   padding: 4rem 1rem;
-  @screen md {
+  @media screen and (min-width: 768px) {
     padding: 6rem 2rem;
   }
-  @screen lg {
+  @media screen and (min-width: 1024px) {
     padding: 8rem 3rem;
   }
 }
