@@ -73,39 +73,49 @@ export const About = () => {
     <div className="w-full" ref={containerRef}>
       {/* Hero Section with Video Background and Animated Text */}
       <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 to-blue-700 text-white text-center px-6">
-        <video autoPlay loop muted className="absolute w-full h-full object-cover" style={{ filter: "brightness(0.3)" }}>
-          <source src="/videos/about-hero.mp4" type="video/mp4" />
+      <div className="absolute inset-0 w-full h-full">
+        <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        preload="auto"
+        className="absolute w-full h-full object-cover object-center" 
+        style={{ filter: "brightness(0.3)", transform: 'scale(1.01)' }}
+        >
+        <source src="/videos/about-hero.mp4" type="video/mp4" />
         </video>
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-5xl lg:text-7xl font-extrabold mb-6 z-10"
-        >
-          About <span className="text-blue-300">BlynQ</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-lg max-w-2xl text-blue-200 mb-8 z-10"
-        >
-          BlynQ is a smart, all-in-one vehicle management platform connecting vehicle owners, service centers, and businesses. With real-time tracking, seamless service bookings, and automated reports, we simplify and streamline vehicle management like never before.
-        </motion.p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-full shadow-lg z-10"
-        >
-          Learn More
-        </motion.button>
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
-        >
-          <ArrowRight className="w-6 h-6 text-white transform rotate-90" />
-        </motion.div>
+      </div>
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="relative text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 z-10"
+      >
+        About <span className="text-blue-300">BlynQ</span>
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="relative text-base md:text-lg max-w-2xl text-blue-200 mb-8 z-10"
+      >
+        BlynQ is a smart, all-in-one vehicle management platform connecting vehicle owners, service centers, and businesses. With real-time tracking, seamless service bookings, and automated reports, we simplify and streamline vehicle management like never before.
+      </motion.p>
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="relative px-6 py-3 bg-white text-blue-900 font-semibold rounded-full shadow-lg z-10"
+      >
+        Learn More
+      </motion.button>
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+      >
+        <ArrowRight className="w-6 h-6 text-white transform rotate-90" />
+      </motion.div>
       </div>
 
       {/* Mission & Vision with Parallax */}
