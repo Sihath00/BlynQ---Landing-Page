@@ -329,31 +329,31 @@ export const About = () => {
           <div className="space-y-24">
             {[
               {
-                year: "2024 September",
+                year: "2024-09",
                 title: "Picted the Idea",
                 description: "Identified the need for a smarter vehicle management system and conceptualized BlynQ as an all-in-one platform for vehicle owners and service centers.",
                 image: "/idea.jpeg",
               },
               {
-                year: "2024 October",
+                year: "2024-10",
                 title: "Start Desiging UI/UX",
                 description: "Focused on creating an intuitive, modern, and seamless user experience, ensuring easy navigation and accessibility across mobile and web platforms.",
                 image: "/figma.jpeg",
               },
               {
-                year: "2025 January",
+                year: "2025-01",
                 title: "Start Impelmenting",
                 description: "Built the core features, integrated real-time tracking, service booking, and automation, while ensuring scalability and security.",
                 image: "/implementation.jpeg",
               },
               {
-                year: "2025 February",
+                year: "2025-02",
                 title: "Finalizing the Product",
                 description: "Refining performance, enhancing user experience, and ensuring a seamless, efficient, and reliable system before launch.",
                 image: "/final.jpeg",
               },
               {
-                year: "2025 March",
+                year: "2025-03",
                 title: "Launching the Product",
                 description: "Bringing BlynQ to the world, transforming vehicle management with an innovative, tech-driven solution that connects users and service providers seamlessly.",
                 image: "/soon.jpeg",
