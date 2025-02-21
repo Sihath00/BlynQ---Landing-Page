@@ -25,8 +25,8 @@ export const Contact = () => {
     setStatusMessage("");
 
     const serviceId = "service_pyfn0cz"; 
-    const templateId = "template_cdct4pu"; // Replace with your actual Template ID
-    const publicKey = "80NRBScFV9Pv8TFz3"; // Replace with your Public Key
+    const templateId = "template_cdct4pu"; 
+    const publicKey = "80NRBScFV9Pv8TFz3"; 
 
     try {
       const response = await emailjs.send(serviceId, templateId, formData, publicKey);
