@@ -20,7 +20,7 @@ export const Services = () => {
         "Track your vehicle's service status in real-time. Get notifications about progress and completion.",
       features: [
         "Live status updates",
-        "Service timeline",
+        "Service timline",
         "Instant notifications",
       ],
     },
