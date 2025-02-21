@@ -48,7 +48,7 @@ export const About = () => {
     {
       name: "Pesadi Wikramathilaka",
       role: "Head of Customer Success",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3",
+      image: "/pesadi.jpeg", 
       bio: "Maria leads our customer success team, focusing on delivering exceptional service experiences.",
       social: {
         linkedin: "https://linkedin.com",
@@ -59,7 +59,7 @@ export const About = () => {
     {
       name: "Sithum Duleka Kalhara",
       role: "Head of Product",
-      image: "/sithum.jpeg", 
+      image: "/sithum.png", 
       bio: "James drives our product strategy, bringing innovative solutions to vehicle management.",
       social: {
         linkedin: "https://linkedin.com",

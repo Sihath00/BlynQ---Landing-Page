@@ -24,7 +24,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4 gradient-text">BlynQ.</h3>
             <p className="text-gray-400 hover:text-white transition-colors duration-300">
-              Simplifying vehicle management for everyone in Sri Lanka.
+              Sync Your Ride...<br></br> Simplify Your Drive...
             </p>
           </div>
           <div>
@@ -37,10 +37,10 @@ export const Footer = () => {
               >
                 <Mail size={20} className="mr-2" />
                 <a
-                  href="mailto:info@blynq.com"
+                  href="mailto:info.blynq@gmail.com"
                   className="text-gray-400 hover:text-white"
                 >
-                  info@blynq.com
+                  info.blynq@gmail.com
                 </a>
               </motion.div>
               <motion.div
@@ -53,7 +53,7 @@ export const Footer = () => {
                   href="tel:+94112345678"
                   className="text-gray-400 hover:text-white"
                 >
-                  +94 11 234 5678
+                  +94 718959193
                 </a>
               </motion.div>
             </motion.div>
