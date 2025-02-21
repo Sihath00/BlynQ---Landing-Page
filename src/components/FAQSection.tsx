@@ -1,22 +1,32 @@
 import { useState } from "react";
 import { FAQItem } from "./FAQItem";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+<Link to="/contact" className="text-blue-600 hover:text-purple-600 font-medium transition-all duration-300 border-b-2 border-blue-600 hover:border-purple-600">
+  Contact our support team
+</Link>
+
 
 const faqs = [{
-  question: "What is Blynq and how does it work?",
-  answer: "Blynq is a modern software solution that helps businesses streamline their operations. Our platform provides intuitive tools for managing your business processes efficiently and effectively."
+  question: "1. What is Blynq and how does it work?",
+  answer: "BlynQ is a smart vehicle management platform designed to simplify service booking, vehicle tracking, document storage, and maintenance reminders. It connects vehicle owners with service centers for a seamless experience."
 }, {
-  question: "Is there a free trial available?",
-  answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card is required to start your trial."
+  question: "2. How can I book a service appointment?",
+  answer: "You can easily book an appointment through the BlynQ app by selecting your preferred service center, choosing a service, and scheduling a time that works best for you."
 }, {
-  question: "What kind of support do you provide?",
-  answer: "We provide 24/7 technical support through email and chat. Our dedicated support team is always ready to help you with any questions or issues you might encounter."
+  question: "3. Is BlynQ available for all types of vehicles?",
+  answer: "Yes! BlynQ supports cars, bikes, trucks, and other vehicles, providing a unified platform for all vehicle owners."
 }, {
-  question: "Can I integrate Blynq with other tools?",
-  answer: "Yes, Blynq offers seamless integration with popular business tools and platforms. We support API integration and have built-in connectors for many common business applications."
+  question: "4. Can I manage multiple vehicles on BlynQ?",
+  answer: "Yes! You can add and manage multiple vehicles under one account, keeping all service records and documents organized."
 }, {
-  question: "How secure is my data with Blynq?",
-  answer: "We take security seriously. All data is encrypted both in transit and at rest, and we follow industry-best security practices. We are SOC 2 compliant and regularly perform security audits."
+  question: "5. Is my vehicle data safe with BlynQ?",
+  answer: "We take security seriously. All data is encrypted both in transit and at rest, and we follow industry-best security practices. Cloud-based storage with encryption to protect all your data, ensuring privacy and security.."
+},
+{
+  question: "6. How can service centers benefit from BlynQ",
+  answer: "Service centers can manage appointments, track customer history, handle inventory, generate invoices, and get valuable business insights—all from a single, easy-to-use dashboard."
 }];
 
 export const FAQSection = () => {
@@ -54,12 +64,9 @@ export const FAQSection = () => {
             className="mt-6 text-gray-600 text-xl max-w-2xl mx-auto"
           >
             Have a different question?{" "}
-            <a 
-              href="#" 
-              className="text-blue-600 hover:text-purple-600 font-medium transition-all duration-300 border-b-2 border-blue-600 hover:border-purple-600"
-            >
+            <Link to="/contact" className="text-blue-600 hover:text-purple-600 font-medium transition-all duration-300 border-b-2 border-blue-600 hover:border-purple-600">
               Contact our support team
-            </a>
+            </Link>
           </motion.p>
         </div>
 
