@@ -427,7 +427,16 @@ export const Home = () => {
         >
           <div className="flex items-center mb-6">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center shadow-lg">
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+              <div className="w-10 h-10 text-white">
+                <img 
+                  src={`/avatars/avatar-${index + 1}.jpg`} 
+                  alt={testimonial.name}
+                  className="w-full h-full object-cover rounded-full"
+                  onError={(e) => {
+                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${testimonial.name}&background=2563eb&color=fff`
+                  }}
+                />
+              </div>
             </div>
             <div className="ml-4">
               <p className="text-xl font-semibold text-blue-900">{testimonial.name}</p>
@@ -448,7 +457,16 @@ export const Home = () => {
         >
           <div className="flex items-center mb-6">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center shadow-lg">
-              <Star className="w-6 h-6 text-yellow-400 fill-current" />
+            <div className="w-10 h-10 text-white">
+                <img 
+                  src={`/avatars/avatar-${index + 1}.jpg`} 
+                  alt={testimonial.name}
+                  className="w-full h-full object-cover rounded-full"
+                  onError={(e) => {
+                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${testimonial.name}&background=2563eb&color=fff`
+                  }}
+                />
+              </div>
             </div>
             <div className="ml-4">
               <p className="text-xl font-semibold text-blue-900">{testimonial.name}</p>
