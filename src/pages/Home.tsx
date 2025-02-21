@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 
-import { Car, Clock, FileText, Calendar, Users, Star, ArrowRight, CheckCircle, Shield, Zap, Database, Bell, UsersIcon, FileCheck2, UserRoundCheck } from "lucide-react";
+import { Car, Clock, FileText, Calendar, Users,ArrowRight, CheckCircle, Shield, Zap, Database, Bell, UsersIcon, FileCheck2, UserRoundCheck } from "lucide-react";
 
 const mobileFeatures = [
   {
@@ -299,88 +299,97 @@ export const Home = () => {
           animate={{ backgroundPosition: ["0% 0%", "100% 100%"] }}
           transition={{ duration: 40, repeat: Infinity, repeatType: "mirror" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          {/* Section Title */}
+          {/* Section Title with enhanced animation */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center mb-16"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-center mb-20"
           >
-            <h2 className="text-5xl font-extrabold bg-gradient-to-r from-[#1A237E] to-[#673AB7] text-transparent bg-clip-text mb-4 drop-shadow-lg">
+            <h2 className="text-6xl font-extrabold bg-gradient-to-r from-[#1A237E] via-[#3949AB] to-[#673AB7] text-transparent bg-clip-text mb-6 drop-shadow-lg">
               Platform Features
             </h2>
-            <div className="w-28 h-1.5 bg-gradient-to-r from-[#1A237E] to-[#4051B5] mx-auto rounded-full shadow-md"></div>
-            <p className="mt-5 text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-              Discover the powerful tools designed to streamline your vehicle management effortlessly.
+            <div className="w-32 h-2 bg-gradient-to-r from-[#1A237E] to-[#4051B5] mx-auto rounded-full shadow-lg transform hover:scale-110 transition-transform"></div>
+            <p className="mt-8 text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+              Experience next-generation vehicle management with our comprehensive suite of tools
             </p>
           </motion.div>
 
-          {/* Mobile Features */}
+          {/* Mobile Features with enhanced cards */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-20"
+            transition={{ duration: 0.8 }}
+            className="mb-24"
           >
-            <h3 className="text-3xl font-semibold text-[#1A237E] mb-10 text-center">Mobile Features</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h3 className="text-4xl font-bold text-[#1A237E] mb-12 text-center">
+              Mobile Experience
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {mobileFeatures.map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="modern-card p-6 hover-lift shadow-2xl rounded-2xl transition-transform transform hover:scale-105 bg-white hover:bg-gradient-to-t from-[#E8EAF6] to-white"
-                  whileHover={{ y: -8 }}
+                  className="group p-8 rounded-3xl transition-all duration-300 bg-white hover:bg-gradient-to-br from-white via-[#E8EAF6] to-[#C5CAE9] shadow-xl hover:shadow-2xl border border-blue-50"
+                  whileHover={{ y: -12, scale: 1.02 }}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <motion.div
-                    whileHover={{ rotate: 15 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-[#2196F3] mb-6 transform transition-transform"
+                    whileHover={{ rotate: 360 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-[#2196F3] w-12 h-12 mb-6 group-hover:text-[#1A237E]"
                   >
                     {feature.icon}
                   </motion.div>
-                  <h4 className="text-2xl font-semibold text-[#1A237E] mb-4">{feature.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  <h4 className="text-2xl font-bold text-[#1A237E] mb-4 group-hover:text-[#303F9F]">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                    {feature.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
           </motion.div>
 
-          {/* Web Features */}
+          {/* Web Features with glass effect */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="relative"
+            transition={{ duration: 0.8 }}
+            className="relative py-12"
           >
-            {/* Glassmorphism Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1A237E] to-[#673AB7] opacity-10 rounded-3xl blur-xl"></div>
-            <h3 className="text-3xl font-semibold text-[#1A237E] mb-10 text-center relative z-10">
-              Web Features
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1A237E] to-[#673AB7] opacity-5 rounded-3xl blur-3xl"></div>
+            <h3 className="text-4xl font-bold text-[#1A237E] mb-12 text-center relative z-10">
+              Web Platform
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
               {webFeatures.map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="glass p-6 rounded-2xl hover-lift shadow-2xl transition-transform transform hover:scale-105 bg-white bg-opacity-70 backdrop-blur-md"
-                  whileHover={{ y: -8 }}
+                  className="group p-8 rounded-3xl transition-all duration-300 bg-white/90 backdrop-blur-lg hover:bg-white/95 shadow-xl hover:shadow-2xl border border-blue-50"
+                  whileHover={{ y: -12, scale: 1.02 }}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <motion.div
-                    whileHover={{ rotate: 20 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-[#2196F3] mb-6 transform transition-transform"
+                    whileHover={{ scale: 1.2, rotate: 360 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-[#2196F3] w-12 h-12 mb-6 group-hover:text-[#1A237E]"
                   >
                     {feature.icon}
                   </motion.div>
-                  <h4 className="text-2xl font-semibold text-[#1A237E] mb-4">{feature.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  <h4 className="text-2xl font-bold text-[#1A237E] mb-4 group-hover:text-[#303F9F]">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                    {feature.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
