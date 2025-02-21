@@ -1,65 +1,113 @@
 import { motion } from "framer-motion";
 import {
-  Clock,
   FileText,
-  Calendar,
-  Shield,
-  MessageSquare,
-  BoxIcon,
+  MapPlus,
+  CarFront,
+  HeartPulse,
+  UsersRound,
+  FileCheck2,
+  MapPinned,
+  ChartNoAxesCombined,
+  BadgeDollarSign,
+  UserRoundCog,
+  BellRing,
   Car,
   Users,
+  CalendarCheck,
 } from "lucide-react";
 import { ServiceCard } from "../components/ServiceCard";
 import { MouseLight } from "../components/MouseLight";
 export const Services = () => {
   const vehicleServices = [
     {
-      icon: Clock,
-      title: "Real-time Service Updates",
+      icon: CalendarCheck,
+      title: "Appointment Management",
       description:
-        "Track your vehicle's service status in real-time. Get notifications about progress and completion.",
+        "Efficiently manage customer bookings with ease.",
       features: [
-        "Live status updates",
-        "Service timeline",
-        "Instant notifications",
+        "Automated scheduling",
+        "Real-time updates",
+        "Reschedule & cancel options",
       ],
     },
     {
-      icon: BoxIcon,
-      title: "Maintenance Tracking",
+      icon: UsersRound,
+      title: "Customer Relationship Management",
       description:
-        "Keep track of all maintenance activities and get timely service reminders.",
-      features: ["Service history", "Maintenance schedules", "Cost tracking"],
+        "Enhance customer experience with seamless communication",
+      features: ["Customer profiles & history", "Automated service reminders", "Direct messaging & notifications"],
     },
     {
-      icon: Shield,
-      title: "Insurance Management",
+      icon: FileText,
+      title: "Service Record Management",
       description:
-        "Manage your vehicle insurance details and get renewal reminders.",
-      features: ["Policy tracking", "Renewal alerts", "Claim assistance"],
+        "Keep track of all service histories in one place.",
+      features: ["Digital record-keeping", "Quick access to past services", "Secure cloud storage"],
+    },
+    {
+      icon: ChartNoAxesCombined,
+      title: "Business Insights & Analytics",
+      description:
+        "Gain valuable insights to grow your service center.",
+      features: ["Performance reports", "Customer trends analysis", "Data-driven decision-making"],
+    },
+    {
+      icon: UserRoundCog,
+      title: "Employee Management",
+      description:
+        "Optimize workflow with efficient staff management.",
+      features: ["Assign tasks to technicians", "Track work progress", "Track work progress"],
+    },
+    {
+      icon: BadgeDollarSign,
+      title: "Marketing & Promotions",
+      description:
+        "Boost customer engagement with targeted promotions.",
+      features: ["Special offers & discounts", "Loyalty programs", "Automated promotional campaigns"],
     },
   ];
   const userServices = [
     {
-      icon: FileText,
-      title: "Document Management",
+      icon: FileCheck2,
+      title: " Report Management",
       description:
-        "Store and manage all your vehicle-related documents in one secure place.",
-      features: ["Digital storage", "Easy access", "Document reminders"],
+        "Track vehicle-related expenses and access detailed reports.",
+      features: ["Expense tracking dashboard", "Service history insights", "Downloadable reports"],
     },
     {
-      icon: Calendar,
-      title: "Appointment Booking",
+      icon: MapPinned,
+      title: "Real-Time Vehicle Tracking",
       description:
-        "Schedule service appointments with your preferred service center hassle-free.",
-      features: ["Online booking", "Reminder system", "Flexible scheduling"],
+        "Monitor your vehicle’s location and service status with precision.",
+      features: ["GPS-based tracking", "Live service updates", "Instant notifications"],
     },
     {
-      icon: MessageSquare,
-      title: "24/7 Support",
+      icon: MapPlus,
+      title: "Service Center Discovery",
       description:
-        "Get assistance whenever you need it through our dedicated support team.",
-      features: ["Live chat", "Email support", "Phone support"],
+        "Find trusted service centers near you with ease.",
+      features: ["Location-based search", "Verified service providers", "Customer ratings & reviews"],
+    },
+    {
+      icon: CarFront,
+      title: "Multi-Vehicle Management",
+      description:
+        "Easily manage multiple vehicles from one dashboard.",
+      features: ["Add and track multiple vehicles", "Unified service history", "Centralized document storage"],
+    },
+    {
+      icon: BellRing,
+      title: "Automated Maintenance Reminders",
+      description:
+        "Stay on top of maintenance schedules with smart alerts.",
+      features: ["Service due notifications", "Customizable reminders", "Scheduled maintenance tracking"],
+    },
+    {
+      icon: HeartPulse,
+      title: "Vehicle Health Monitoring",
+      description:
+        "Stay informed about your vehicle’s condition in real time.",
+      features: ["Diagnostic alerts", "Maintenance recommendations", "Performance insights"],
     },
   ];
   return (
