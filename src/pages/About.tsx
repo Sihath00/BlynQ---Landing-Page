@@ -1,6 +1,6 @@
 import{ useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { Target, Award, ArrowRight, Mail, Linkedin, Twitter } from "lucide-react";
+import { Target, Award, ArrowRight, Mail, Linkedin, Github } from "lucide-react";
 export const About = () => {
   const containerRef = useRef(null);
   useScroll({
@@ -14,56 +14,56 @@ export const About = () => {
   const team = [
     {
       name: "Sihath Senarath Yapa",
-      role: "CEO & Founder",
+      role: "Founder & Web App Developer",
       image: "/sihath.jpg", 
-      bio: "With over 15 years of experience in automotive industry, John leads our vision for the future of vehicle management.",
+      bio: "A passionate undergraduate at the Informatic Institute of Technology, exploring the world of software development with a keen interest in full-stack technologies.",
       social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        email: "john@blynq.com",
+        linkedin: "https://www.linkedin.com/in/sihathsenarath",
+        github: "https://github.com/Sihath00",
+        email: "mailto:sihathsenarathyapa26@gmail.com",
       },
     },
     {
       name: "Amina Haja Meyan",
-      role: "Head of Operations",
+      role: "Project Manager & Mobile Developer",
       image: "/amina.jpg", 
-      bio: "Sarah brings 12 years of tech leadership experience, driving innovation in our platform development.",
+      bio: "Enthusiastic about coding and problem-solving, currently honing skills in web and mobile development as an undergraduate at IIT",
       social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        email: "sarah@blynq.com",
+        linkedin: "https://www.linkedin.com/in/aminahajameyan",
+        github: "https://github.com/AminaHajaMeyan",
+        email: "mailto:aminahajameyan123@gmail.com",
       },
     },
     {
       name: "Gaindu Amarasingha",
-      role: "Chief Technology Officer",
+      role: "Chief Technology Officer & Backend Developer",
       image: "/gaindu.jpeg", 
-      bio: "David oversees our day-to-day operations, ensuring seamless service delivery to all our clients.",
+      bio: "An aspiring software engineer eager to learn and innovate, diving into backend development and database management at IIT",
       social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        email: "david@blynq.com",
+        linkedin: "https://www.linkedin.com/in/gainduamarasinghe",
+        github: "https://github.com/gainduamarasinghe",
+        email: "mailto:gaindu2k03@gmail.com",
       },
     },
     {
       name: "Pesadi Wikramathilaka",
-      role: "Head of Customer Success",
+      role: "UI/UX Designer & Mobile Developer",
       image: "/pesadi.jpeg", 
-      bio: "Maria leads our customer success team, focusing on delivering exceptional service experiences.",
+      bio: "Passionate about UI/UX design and frontend development, striving to create user-friendly applications while pursuing studies at IIT",
       social: {
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
-        email: "maria@blynq.com",
+        linkedin: "https://www.linkedin.com/in/pesadi-wickramathilaka-8a266928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/methwari",
+        email: "mailto:methwari02@gmail.com",
       },
     },
     {
       name: "Sithum Duleka Kalhara",
-      role: "Head of Product",
+      role: "Head of Product & Cloud Engineer",
       image: "/sithum.png", 
-      bio: "James drives our product strategy, bringing innovative solutions to vehicle management.",
+      bio: " A tech enthusiast exploring cloud computing and DevOps, eager to build scalable solutions as an undergraduate at IIT.",
       social: {
         linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
+        github: "https://twitter.com",
         email: "james@blynq.com",
       },
     },
@@ -90,7 +90,7 @@ export const About = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg max-w-2xl text-blue-200 mb-8 z-10"
         >
-          We are committed to transforming vehicle management through innovative solutions and unwavering dedication.
+          BlynQ is a smart, all-in-one vehicle management platform connecting vehicle owners, service centers, and businesses. With real-time tracking, seamless service bookings, and automated reports, we simplify and streamline vehicle management like never before.
         </motion.p>
         <motion.button
           whileHover={{ scale: 1.05 }}
@@ -124,8 +124,7 @@ export const About = () => {
               </div>
               <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
-                To simplify vehicle management and maintenance through innovative technology, making it accessible and efficient for
-                everyone in Sri Lanka.
+              To redefine vehicle management by bringing the entire automobile industry into one app. We are committed to leveraging cutting-edge technology, data-driven insights, and seamless connectivity to simplify service operations, enhance customer engagement, and drive innovation across the industry. 
               </p>
             </motion.div>
             <motion.div
@@ -140,8 +139,7 @@ export const About = () => {
               </div>
               <h2 className="text-3xl font-bold text-white mb-6">Our Vision</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
-                To become the leading vehicle management platform in South Asia, known for innovation, reliability, and customer
-                satisfaction.
+              To be the leading digital ecosystem for the automobile industry, seamlessly integrating vehicle owners, service providers, and businesses into a unified, intelligent platform that enhances efficiency, transparency, and user experience.
               </p>
             </motion.div>
           </div>
@@ -252,9 +250,10 @@ export const About = () => {
             <a href={member.social.linkedin} className="text-blue-600 hover:text-blue-400 transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href={member.social.twitter} className="text-blue-600 hover:text-blue-400 transition-colors">
-              <Twitter className="w-6 h-6" />
+            <a href={member.social.github} className="text-blue-600 hover:text-blue-400 transition-colors">
+              <Github className="w-6 h-6" />
             </a>
+
             <a href={`mailto:${member.social.email}`} className="text-blue-600 hover:text-blue-400 transition-colors">
               <Mail className="w-6 h-6" />
             </a>
@@ -289,9 +288,10 @@ export const About = () => {
             <a href={member.social.linkedin} className="text-blue-600 hover:text-blue-400 transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href={member.social.twitter} className="text-blue-600 hover:text-blue-400 transition-colors">
-              <Twitter className="w-6 h-6" />
+            <a href={member.social.github} className="text-blue-600 hover:text-blue-400 transition-colors">
+            <Github className="w-6 h-6" />
             </a>
+
             <a href={`mailto:${member.social.email}`} className="text-blue-600 hover:text-blue-400 transition-colors">
               <Mail className="w-6 h-6" />
             </a>
@@ -319,34 +319,34 @@ export const About = () => {
           <div className="space-y-24">
             {[
               {
-                year: "2020",
-                title: "Company Founded",
-                description: "BlynQ was established with a vision to revolutionize vehicle management",
-                image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3",
+                year: "2024 September",
+                title: "Picted the Idea",
+                description: "Identified the need for a smarter vehicle management system and conceptualized BlynQ as an all-in-one platform for vehicle owners and service centers.",
+                image: "/idea.jpeg",
               },
               {
-                year: "2021",
-                title: "First 1000 Users",
-                description: "Reached our first milestone of 1000 active users",
-                image: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3",
+                year: "2024 October",
+                title: "Start Desiging UI/UX",
+                description: "Focused on creating an intuitive, modern, and seamless user experience, ensuring easy navigation and accessibility across mobile and web platforms.",
+                image: "/figma.jpeg",
               },
               {
-                year: "2022",
-                title: "Service Center Network",
-                description: "Expanded our network to include 200+ service centers",
-                image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3",
+                year: "2025 January",
+                title: "Start Impelmenting",
+                description: "Built the core features, integrated real-time tracking, service booking, and automation, while ensuring scalability and security.",
+                image: "/implementation.jpeg",
               },
               {
-                year: "2023",
-                title: "Mobile App Launch",
-                description: "Launched our mobile application for iOS and Android",
-                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3",
+                year: "2025 February",
+                title: "Finalizing the Product",
+                description: "Refining performance, enhancing user experience, and ensuring a seamless, efficient, and reliable system before launch.",
+                image: "/final.jpeg",
               },
               {
-                year: "2024",
-                title: "International Expansion",
-                description: "Started operations in neighboring countries",
-                image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3",
+                year: "2025 March",
+                title: "Launching the Product",
+                description: "Bringing BlynQ to the world, transforming vehicle management with an innovative, tech-driven solution that connects users and service providers seamlessly.",
+                image: "/soon.jpeg",
               },
             ].map((item, index) => (
               <motion.div
