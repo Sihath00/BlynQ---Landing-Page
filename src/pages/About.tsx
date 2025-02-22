@@ -62,9 +62,9 @@ export const About = () => {
       image: "/sithum.png", 
       bio: " A tech enthusiast exploring cloud computing and DevOps, eager to build scalable solutions as an undergraduate at IIT.",
       social: {
-        linkedin: "https://linkedin.com",
-        github: "https://twitter.com",
-        email: "james@blynq.com",
+        linkedin: "https://www.linkedin.com/in/sithum-duleka-04a209310",
+        github: "https://github.com/SithumDuleka",
+        email: "mailto:sithumdulekakalhara@gmail.com",
       },
     },
   ];
