@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail, Phone, Linkedin } from "lucide-react";
+import { Instagram, Mail, Phone, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const Footer = () => {
@@ -83,23 +83,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4 justify-center">
               <motion.a
-              href="#"
-              variants={linkVariants}
-              whileHover="hover"
-              className="text-gray-400 hover:text-white"
-              >
-              <Facebook size={24} />
-              </motion.a>
-              <motion.a
-              href="#"
-              variants={linkVariants}
-              whileHover="hover"
-              className="text-gray-400 hover:text-white"
-              >
-              <Twitter size={24} />
-              </motion.a>
-              <motion.a
-              href="#"
+              href="https://www.instagram.com/blynq.app?igsh=aHEybmYydXRsZDIz&utm_source=qr"
               variants={linkVariants}
               whileHover="hover"
               className="text-gray-400 hover:text-white"
@@ -107,7 +91,7 @@ export const Footer = () => {
               <Instagram size={24} />
               </motion.a>
               <motion.a
-              href="#"
+              href="https://www.linkedin.com/company/blynqapp/"
               variants={linkVariants}
               whileHover="hover"
               className="text-gray-400 hover:text-white"
